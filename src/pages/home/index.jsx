@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <div className="home_page">
-      <img className="home_page--image" src={moleImage} />
+      <img className="home_image" src={moleImage} />
       <h1 className="home_title" data-testid="home_title">
         Catch Moli
       </h1>

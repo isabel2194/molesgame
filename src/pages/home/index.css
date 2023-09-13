@@ -29,4 +29,10 @@ body{
     font-weight: bold;
     margin-bottom: 20px;
   }
+
+  @media(max-width: 768px){
+    .home_image{
+      max-width: 300px;
+    }
+  }
 }
