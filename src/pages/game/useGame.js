@@ -50,7 +50,7 @@ const useGame = () => {
   }, [isStarted, level]);
 
   useEffect(() => {
-    if (isStarted && time > 0) {
+    if (isStarted) {
       initialiceGame();
       timer.current = setInterval(() => setTime((time) => time - 1), 1000);
     } else {
