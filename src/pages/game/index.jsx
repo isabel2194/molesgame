@@ -53,7 +53,11 @@ const Game = () => {
         <h1 className="game_title" data-testid="game_title">
           Catch Moli
         </h1>
-        <div className="game_header-right-actions" onClick={(e) => setOpenedUserMenu(e.currentTarget)}>
+        <div
+          className="game_header-right-actions"
+          data-testid="game-header-user"
+          onClick={(e) => setOpenedUserMenu(e.currentTarget)}
+        >
           <Avatar />
           <span className="game_header-username" data-testid="game_header-username">
             {user ?? "User"}

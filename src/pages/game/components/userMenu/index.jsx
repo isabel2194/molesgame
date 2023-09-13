@@ -47,7 +47,7 @@ const UserMenu = ({ element, handleClose }) => {
       transformOrigin={{ horizontal: "right", vertical: "top" }}
       anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
     >
-      <MenuItem onClick={handleLogout}>
+      <MenuItem onClick={handleLogout} data-testid="menu-item--logout">
         <ListItemIcon>
           <Logout fontSize="small" />
         </ListItemIcon>
