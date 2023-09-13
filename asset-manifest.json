@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/molesgame/home/static/css/main.f3a99b5f.css",
-    "main.js": "/molesgame/home/static/js/main.f4731e48.js",
-    "static/media/mole.png": "/molesgame/home/static/media/mole.1c992117a7a864d05489.png",
-    "index.html": "/molesgame/home/index.html",
-    "main.f3a99b5f.css.map": "/molesgame/home/static/css/main.f3a99b5f.css.map",
-    "main.f4731e48.js.map": "/molesgame/home/static/js/main.f4731e48.js.map"
+    "main.css": "/molesgame/static/css/main.f3a99b5f.css",
+    "main.js": "/molesgame/static/js/main.68c1fbf9.js",
+    "static/media/mole.png": "/molesgame/static/media/mole.1c992117a7a864d05489.png",
+    "index.html": "/molesgame/index.html",
+    "main.f3a99b5f.css.map": "/molesgame/static/css/main.f3a99b5f.css.map",
+    "main.68c1fbf9.js.map": "/molesgame/static/js/main.68c1fbf9.js.map"
   },
   "entrypoints": [
     "static/css/main.f3a99b5f.css",
-    "static/js/main.f4731e48.js"
+    "static/js/main.68c1fbf9.js"
   ]
 }
