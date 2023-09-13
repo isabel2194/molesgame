@@ -28,17 +28,28 @@ const Home = () => {
   return (
     <div className="home_page">
       <img className="home_page--image" src={moleImage} />
-      <h1 className="home_title">Aplasta a Topi</h1>
+      <h1 className="home_title" data-testid="home_title">
+        Catch Moli
+      </h1>
       <div className="home_content">
         <TextField
           error={hasError}
           className="home_username"
           label="Username"
           variant="standard"
+          inputProps={{
+            "data-testid": "home_username",
+          }}
+          FormHelperTextProps={{ "data-testid": "home_username--error" }}
           helperText={hasError ? "Enter a username" : ""}
           onChange={(value) => setUser(value.target.value)}
+          onKeyUp={(event) => {
+            if (event.key === "Enter") {
+              handleCheckAndPlay();
+            }
+          }}
         />
-        <Button variant="contained" onClick={handleCheckAndPlay}>
+        <Button data-testid="home_button" variant="contained" onClick={handleCheckAndPlay}>
           Join
         </Button>
       </div>

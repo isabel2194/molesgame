@@ -1,5 +1,5 @@
 .game_page{
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Gluten", san-serif;
   .game_header{
     display: flex;
     flex-direction: row;
@@ -11,14 +11,16 @@
     background-color: antiquewhite; 
     .game_title{
       margin: 0;
+      font-size: 45px;
     } 
-    .game_header_right-actions{
+    .game_header-right-actions{
       display: flex;
       flex-direction: row;
       justify-content: right;
       align-items: center;
       min-width:120px;
-      .game_header_user-name{
+      cursor: pointer;
+      .game_header-username{
         margin: 0 10px;
       }
     }
@@ -35,11 +37,17 @@
     justify-content: space-between;
     align-items: center;
   }
-  .game_score{
+  .game_info{
     font-size:20px;
-    align-self: end;
-    &.game_score--end{
+    font-weight: bold;
+    align-self: start;
+    & .game_info_start{
+      margin: 53px 0;
+      font-weight: 200;
+    }
+    &.game_info--end{
       align-self: center;
+      text-align: center;
       font-size: 30px;
       padding: 20px;
     }
@@ -49,17 +57,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 40px;
-  }
-  .game_board-cell{
-    width: 150px;
-    height: 150px;
-    margin: 0 5px;
-    border-bottom: 1px solid #bdbdbd52;
-    border-bottom-style: dashed;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
   }
   .game_button{
     max-width: 200px;

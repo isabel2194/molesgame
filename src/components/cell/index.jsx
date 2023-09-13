@@ -1,8 +1,10 @@
 import React from "react";
+import cn from "classnames";
+import "./index.css";
 
-const Cell = ({ className, children, onClick }) => {
+const Cell = ({ className, testId, children, onClick }) => {
   return (
-    <div className={className} onClick={onClick}>
+    <div className={cn("cell", className)} onClick={onClick} data-testid={testId}>
       {children}
     </div>
   );
