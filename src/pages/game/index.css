@@ -1,0 +1,76 @@
+.game_page{
+  font-family: "Gluten", san-serif;
+  .game_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 15px;
+    color: gray;
+    background-color: antiquewhite; 
+    .game_title{
+      margin: 0;
+      font-size: 45px;
+      text-align: center;
+    } 
+    .game_header-right-actions{
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      align-items: center;
+      min-width:120px;
+      cursor: pointer;
+      .game_header-username{
+        margin: 0 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+  .game_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .game_content-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .game_info{
+    font-size:20px;
+    font-weight: bold;
+    align-self: start;
+    & .game_info_start{
+      margin: 53px 0;
+      font-weight: 200;
+    }
+    &.game_info--end{
+      align-self: center;
+      text-align: center;
+      font-size: 30px;
+      padding: 20px;
+    }
+  }
+
+  .game_board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px;
+
+    @media (max-width: 768px) {
+      & .cell{
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+  .game_button{
+    max-width: 200px;
+    align-self: center;
+  }
+}
